@@ -69,9 +69,9 @@ export function sumAndMultiplyThreeNumbers(a, b, c) {
     const firstAdd = sum(a, b);
     const firstAdd1 = firstAdd[0];
     const secondAdd = sum(firstAdd1, c);
-    console.log(secondAdd[0]);
+    
     const secondAdd1 = secondAdd[0];
-    console.log(secondAdd1);
+    
 
     const firstMult = multiply(a, b);
     const firstMult1 = firstMult[0];
