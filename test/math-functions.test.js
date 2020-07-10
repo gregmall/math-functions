@@ -11,7 +11,7 @@ const test = QUnit.test;
 
 /* DO NOT MODIFY THIS FILE */
 
-test('sum', (assert) => {
+test('when given a 4 and a 7  we expect it to returnan array with 11. ', (assert) => {
     const result = sum(4, 7);
 
     assert.equal(result[0], 11);
