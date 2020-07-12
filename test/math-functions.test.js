@@ -41,7 +41,7 @@ test('when given an array we expect it to return the sum of the array elements a
     assert.equal(result[1], '2,3,4 was passed in as an array of numbers, and 9 is their sum.');
 });
 
-test('multiplyArrayWithThreeNumbers', (assert) => {
+test('when given an array of 3 values we expect it to return the product of those values and a string explaing the process', (assert) => {
     const result = multiplyArrayWithThreeNumbers([2, 3, 4]);
 
     assert.equal(result[0], 24);
