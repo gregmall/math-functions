@@ -34,7 +34,7 @@ test('when given 3 values we expect the sum of the values and the product of the
     assert.equal(result[3], 'The product of 4 and 7 and 5 is 140.');
 });
 
-test('sumArrayWithThreeNumbers', (assert) => {
+test('when given an array we expect it to return the sum of the array elements and a string explaining the process ', (assert) => {
     const result = sumArrayWithThreeNumbers([2, 3, 4]);
 
     assert.equal(result[0], 9);
