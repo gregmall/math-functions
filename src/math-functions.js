@@ -83,7 +83,7 @@ export function sumAndMultiplyThreeNumbers(a, b, c) {
     
  
     const array = [secondAdd1, secondMult1, a + ' and ' + b + ' and ' + c + ' sum to ' + secondAdd1 + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + secondMult1 + '.'];
-   console.log(array);
+   
     return array;
 
 }
@@ -119,10 +119,10 @@ export function sumArrayWithThreeNumbers(sumArr) {
       
         
         
-    console.log(secondAdd1);
+    
 
-    const array = [secondAdd1 + ', ' + sumArr[0] + ', ' + sumArr[1] + ', ' + sumArr[2], ' was passed in as an array of number, and ' + secondAdd1 + ' is their sum.'];
-    console.log(array);
+    const array = [secondAdd1, + sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + secondAdd1 + ' is their sum.'];
+    
     return  array;
 
 }
@@ -153,10 +153,12 @@ export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
     const firstMult = multiply(multArr[0], multArr[1]);
     const firstMult1 = firstMult[0];
     const secondMult = multiply(firstMult1, multArr[2]);
-   
+  
     const secondMult1 = secondMult[0];
 
-    
+    console.log(secondMult1);
+    const array = [secondMult1, 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + secondMult1 + '.'];
+    return array;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
