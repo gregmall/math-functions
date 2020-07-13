@@ -123,7 +123,7 @@ export function sumArrayWithThreeNumbers(sumArr) {
 
     const array = [secondAdd1, + sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + secondAdd1 + ' is their sum.'];
     
-    return  array;
+    return array;
 
 }
 
@@ -178,9 +178,39 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
 */
 
-export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+export function multiplyAnyArray(dynamicArray) {
+    //eslint-disable-line
+    let mult = 1;
+    for (let i = 0; i < dynamicArray.length; i++){
+
+        mult = multiply(dynamicArray[i], mult)[0];
+    }
+              
+              
+    
+                
+    
+  
+        
+    const array = [mult, 'The numbers ' + dynamicArray + ' have a product of ' + mult + '.'];
+   
+
+    return array;
 
 }
+
+
+
+
+    
+  
+        
+       
+
+        
+
+    
+   
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas.

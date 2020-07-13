@@ -48,7 +48,7 @@ test('when given an array of 3 values we expect it to return the product of thos
     assert.equal(result[1], 'The numbers 2,3,4 have a product of 24.');
 });
 
-test('multiplyAnyArray', (assert) => {
+test('when given a dynamic array it returns the product of all the values in the array and explaining the process', (assert) => {
     const result = multiplyAnyArray([1, 2, 3, 4, 5]);
 
     assert.equal(result[0], 120);
